@@ -20,3 +20,22 @@
 修复此问题的方法很简单：
 1. 使用@Getter @Setter @ToString代替@Data并且自定义equals(Object other) 和 hashCode()方法，比如有些类只需要判断主键id是否相等即足矣。
 2. 或者使用在使用@Data时同时加上@EqualsAndHashCode(callSuper=true)注解。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
