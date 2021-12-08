@@ -1,0 +1,23 @@
+1、创建service接口
+2、创建service接口实现类
+3、添加注解
+	在接口的实现类中添加注解@Service，这个注解是阿里巴巴提供的，而不是使用Spring提供的Service注解
+4、引入依赖
+5、编写配置文件（xml）
+	1、<dubbo:application name="应用名字"/>
+	2、<dubbo:registry address="注册中心地址"/>
+	3、<dubbo:annotation package="包地址"/>
+6、创建消费方
+	1、引入依赖
+	2、添加注解
+		和上面的服务提供方一样
+	3、调用服务
+		1、编写Controller	
+		2、调用RPC
+			1、直接引用提供方的接口即可（SpringCloud则是使用服务名调用微服务）
+			2、需要使用@Reference注解来注入服务提供方接口	
+			
+
+
+
+
